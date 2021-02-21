@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Element Documentation</title>
+    <link rel="stylesheet" href="documentation.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Elements</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Root">Root</a></li>
+        <li><a class="nav-link" href="#Document_Metadata">Document Metadata</a></li>
+        <li><a class="nav-link" href="#Content_Sectioning">Content Sectioning</a></li>
+        <li><a class="nav-link" href="#Text_Content">Text Content</a></li>
+        <li><a class="nav-link" href="#Inline_Text_Semantics">Inline Text Semantics</a></li>
+        <li><a class="nav-link" href="#Image_and_Multimedia">Image and Multimedia</a></li>
+        <li><a class="nav-link" href="#Forms">Forms</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <article>
+
+          <p>At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page.</p>
+
+          <p>This page lists some of the most common HTML elements, which are created using tags. They are grouped by function to help you find what you have in mind easily.</p>
+
+        </article>
+      </section>
+
+      <section id="Root" class="main-section">
+        <header>Root</header>
+        <article>
+          <h2><code>&lt;html&gt;</code></h2>
+          <p>The HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.</p>
+        </article>
+      </section>
+
+      <section id="Document_Metadata" class="main-section">
+        <header>Document Metadata</header>
+        <article>
+          <p>Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information</p>
+
+          <h2><code>&lt;head&gt;</code></h2>
+          <p>The HTML head element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</p>
+
+          <h2><code>&lt;link&gt;</code></h2>
+          <p>The HTML External Resource Link element specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.</p>
+
+          <div class="code-div">
+            <ul>
+              <li><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></li>
+              <li><code>&lt;link rel="icon" href="favicon.ico"&gt;</code></li>
+            </ul>
+          </div>
+
+          <h2><code>&lt;meta&gt;</code></h2>
+          <p>The HTML meta element represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.</p>
+
+          <div class="code-div">
+            <ul>
+              <li><code>&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</code></li>
+              <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+            </ul>
+          </div>
+
+        </article>
+      </section>
+
+      <section id="Content_Sectioning" class="main-section">
+        <header>Content Sectioning</header>
+        <article>
+          <p>Content sectioning elements allow you to organize the document content into logical pieces. Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content.</p>
+
+          <h2><code>&lt;article&gt;</code></h2>
+          <p>The HTML article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).</p>
+
+          <h2><code>&lt;header&gt;</code></h2>
+          <p>The HTML header element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</p>
+
+          <h2><code>&lt;footer&gt;</code></h2>
+          <p>The HTML footer element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+
+          <h2><code>&lt;h1&gt;</code></h2>
+          <p>The HTML <code>&lt;h1&gt; – &lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the lowest.</p>
+
+          <div class="code-div">
+            <ul>
+              <li><code>&lt;h2&gt;&lt;/h2&gt;</code></li>
+              <li><code>&lt;h3&gt;&lt;/h3&gt;</code></li>
+              <li><code>&lt;h4&gt;&lt;/h4&gt;</code></li>
+              <li><code>&lt;h5&gt;&lt;/h5&gt;</code></li>
+              <li><code>&lt;h6&gt;&lt;/h6&gt;</code></li>
+            </ul>
+          </div>
+
+        </article>
+      </section>
+
+      <section id="Text_Content" class="main-section">
+        <header>Text Content</header>
+        <article>
+          <p>Use HTML text content elements to organize blocks or sections of content placed between the opening <code>&lt;body&gt;</code> and closing <code>&lt;/body&gt;</code> tags. Important for accessibility and SEO, these elements identify the purpose or structure of that content.</p>
+
+          <h2><code>&lt;div&gt;</code></h2>
+          <p>The HTML Content Division element (<code>&lt;div&gt;</code>) is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).</p>
+
+          <h2><code>&lt;li&gt;</code></h2>
+          <p>The HTML <code>&lt;li&gt;</code> element is used to represent an item in a list.</p>
+
+          <h2><code>&lt;ol&gt;</code></h2>
+          <p>The HTML <code>&lt;ol&gt;</code> element represents an ordered list of items — typically rendered as a numbered list.</p>
+
+          <h2><code>&lt;p&gt;</code></h2>
+          <p>The HTML <code>&lt;p&gt;</code> element represents a paragraph.</p>
+
+          <h2><code>&lt;ul&gt;</code></h2>
+          <p>The HTML <code>&lt;ul&gt;</code> element represents an unordered list of items, typically rendered as a bulleted list.</p>
+
+        </article>
+      </section>
+
+      <section id="Inline_Text_Semantics" class="main-section">
+        <header>Inline Text Semantics</header>
+        <article>
+          <p>Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.</p>
+
+          <h2><code>&lt;a&gt;</code></h2>
+          <p>The HTML <code>&lt;a&gt;</code> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</p>
+
+          <h2><code>&lt;em&gt;</code></h2>
+          <p>The HTML <code>&lt;em&gt;</code> element marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
+
+          <h2><code>&lt;span&gt;</code></h2>
+          <p>The HTML <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang.</p>
+
+        </article>
+      </section>
+
+      <section id="Image_and_Multimedia" class="main-section">
+        <header>Image and Multimedia</header>
+        <article>
+          <p>HTML supports various multimedia resources such as images, audio, and video.</p>
+
+          <h2><code>&lt;audio&gt;</code></h2>
+          <p> The HTML <code>&lt;audio&gt;</code> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the source element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.</p>
+
+          <h2><code>&lt;img&gt;</code></h2>
+          <p> The HTML <code>&lt;img&gt;</code> element embeds an image into the document.</p>
+
+          <h2><code>&lt;video&gt;</code></h2>
+          <p>The HTML Video element (<code>&lt;video&gt;</code>) embeds a media player which supports video playback into the document. You can use <code>&lt;video&gt;</code> for audio content as well, but the audio element may provide a more appropriate user experience.</p>
+
+        </article>
+      </section>
+
+      <section id="Forms" class="main-section">
+        <header>Forms</header>
+        <article>
+          <p>HTML provides a number of elements which can be used together to create forms which the user can fill out and submit to the Web site or application.</p>
+
+          <h2><code>&lt;button&gt;</code></h2>
+          <p>The HTML <code>&lt;button&gt;</code> element represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality.</p>
+
+          <h2><code>&lt;form&gt;</code></h2>
+          <p>The HTML <code>&lt;form&gt;</code> element represents a document section containing interactive controls for submitting information.</p>
+
+          <h2><code>&lt;input&gt;</code></h2>
+          <p>The HTML <code>&lt;input&gt;</code> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent.</p>
+
+          <h2><code>&lt;label&gt;</code></h2>
+          <p>The HTML <code>&lt;label&gt;</code> element represents a caption for an item in a user interface.</p>
+
+        </article>
+      </section>
+
+    </main>
+    <footer>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">All text and examples are from Mozilla's Web Documentation</a>
+    </footer>
+  </body>
+</html>
